@@ -1,0 +1,3 @@
+D:\Programs\cmake-3.29.3-windows-x86_64\cmake-3.29.3-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\course_project.dir/objects.a
+D:\Programs\Qt\Tools\mingw730_64\bin\ar.exe qc CMakeFiles\course_project.dir/objects.a @CMakeFiles\course_project.dir\objects1.rsp
+D:\Programs\Qt\Tools\mingw730_64\bin\g++.exe -DQT_QML_DEBUG -g -DQT_QML_DEBUG -Wl,--whole-archive CMakeFiles\course_project.dir/objects.a -Wl,--no-whole-archive -o course_project.exe -Wl,--out-implib,libcourse_project.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\course_project.dir\linkLibs.rsp
