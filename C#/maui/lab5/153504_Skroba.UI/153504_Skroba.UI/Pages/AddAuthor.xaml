@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_153504_Skroba.UI.Pages.AddAuthor"
+             xmlns:pages="clr-namespace:_153504_Skroba.UI.Pages"
+             xmlns:models="clr-namespace:_153504_Skroba.UI.ViewModels"
+             xmlns:ent="clr-namespace:_153504_Skroba.Domain.Entities;assembly=153504_Skroba.Domain"
+             x:DataType="models:AuthorsViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BindingContext = "AuthorsViewModel"
+             Title="AddAuthor">
+    <VerticalStackLayout Margin="40">
+        <HorizontalStackLayout Margin="20">
+            <Label Text="Full name: " VerticalOptions="Center"/>
+            <Entry x:Name="nameEntry" Margin="10, 0, 0, 0" WidthRequest="330"/>
+            <Button Text="Add" Clicked="OnAddClicked" Margin="20, 0, 0, 0" WidthRequest="100"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

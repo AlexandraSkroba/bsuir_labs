@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Projects.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Projects.Pages"
+    FlyoutBackgroundColor="#fff">
+
+    <FlyoutItem Title="CurrencyConverter">
+        <ShellContent Title="CurrencyConverter" ContentTemplate="{DataTemplate local:CurrencyConverter}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Calculator">
+        <ShellContent Title="Calculator" ContentTemplate="{DataTemplate local:Calculator}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Integral">
+        <ShellContent Title="Sinx" ContentTemplate="{DataTemplate local:Integral}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Artist-songs">
+        <ShellContent Title="Artist-songs" ContentTemplate="{DataTemplate local:Artist_Songs}" />
+    </FlyoutItem>
+
+</Shell>

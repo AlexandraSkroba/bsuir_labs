@@ -1,0 +1,16 @@
+2023-12-07 15:25:56.801 +03:00 [INF] ---> request /css/site.css returns 304
+2023-12-07 15:26:06.024 +03:00 [INF] ---> request /identity/Logout returns 302
+2023-12-07 15:26:12.390 +03:00 [INF] ---> request /signout-callback-oidc returns 302
+2023-12-07 15:26:14.106 +03:00 [INF] ---> request /identity/Login returns 302
+2023-12-07 15:26:29.742 +03:00 [INF] ---> request /signin-oidc returns 302
+2023-12-07 15:28:15.065 +03:00 [INF] ---> request /identity/Logout returns 302
+2023-12-07 15:28:20.380 +03:00 [INF] ---> request /signout-callback-oidc returns 302
+2023-12-07 15:28:22.472 +03:00 [INF] ---> request /identity/Login returns 302
+2023-12-07 15:28:30.826 +03:00 [INF] ---> request /signin-oidc returns 302
+2023-12-07 15:30:36.294 +03:00 [INF] ---> request /identity/Logout returns 302
+2023-12-07 15:30:38.642 +03:00 [INF] ---> request /signout-callback-oidc returns 302
+2023-12-07 15:30:40.581 +03:00 [INF] ---> request /identity/Login returns 302
+2023-12-07 15:31:02.692 +03:00 [INF] ---> request /signin-oidc returns 302
+2023-12-07 20:16:42.193 +03:00 [INF] ---> request /identity/Login returns 302
+2023-12-07 20:16:52.902 +03:00 [INF] ---> request /signin-oidc returns 302
+2023-12-07 20:16:58.813 +03:00 [INF] ---> request /js/site.js returns 304

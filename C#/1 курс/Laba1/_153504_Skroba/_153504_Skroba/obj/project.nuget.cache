@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "m6/DGmkbWFrgBisPYaY82ppNZTAOu3BaG5YTHvoIEFoZAhrxeNKnvl0JfInsj3UlIPtqlwtdD2jE3E9+KMxhAQ==",
+  "success": true,
+  "projectFilePath": "D:\\С#\\Laba1\\_153504_Skroba\\_153504_Skroba\\_153504_Skroba.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Александра\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Александра\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

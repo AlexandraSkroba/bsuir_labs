@@ -1,0 +1,4 @@
+2023-12-15 00:19:13.109 +03:00 [INF] ---> request /identity/Logout returns 302
+2023-12-15 00:19:15.805 +03:00 [INF] ---> request /signout-callback-oidc returns 302
+2023-12-15 00:19:17.674 +03:00 [INF] ---> request /identity/Login returns 302
+2023-12-15 00:19:26.662 +03:00 [INF] ---> request /signin-oidc returns 302

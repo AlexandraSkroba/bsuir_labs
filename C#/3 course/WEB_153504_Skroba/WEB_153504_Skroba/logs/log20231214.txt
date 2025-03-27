@@ -1,0 +1,5 @@
+2023-12-14 23:38:01.943 +03:00 [INF] ---> request /font-awesome/css/all.min.css returns 304
+2023-12-14 23:38:02.089 +03:00 [INF] ---> request /font-awesome/webfonts/fa-brands-400.woff2 returns 304
+2023-12-14 23:38:30.921 +03:00 [INF] ---> request /identity/Login returns 302
+2023-12-14 23:38:42.602 +03:00 [INF] ---> request /signin-oidc returns 302
+2023-12-14 23:38:42.688 +03:00 [INF] ---> request /font-awesome/webfonts/fa-solid-900.woff2 returns 304

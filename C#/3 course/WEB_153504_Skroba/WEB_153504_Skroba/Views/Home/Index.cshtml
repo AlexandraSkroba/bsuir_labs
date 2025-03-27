@@ -1,0 +1,90 @@
+﻿@{
+	ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/font-awesome/css/all.min.css" />
+</head>
+<body>
+	<main class="container">
+		<div class="lab1 mt-3">
+			<h2>@ViewData["Message"]</h2>
+			<div class="list">
+				<h3>Список</h3>
+				<ol type="A">
+					@{
+						for(int i = 1; i < 3; i++)
+						{
+							<li>элемент @i списка</li>	 					
+						}
+					}
+				</ol>
+			</div>
+		</div>
+		<hr />
+		<form method="post">
+			<h3>Форма</h3> 
+			<div class="col-sm-10 offset-sm-2"> <!-- список -->
+				<select class="form-select mb-3 mt-3" name="selDemo"
+					asp-items="@(new SelectList(Model, "Id", "Name"))">
+				</select> 
+			</div> <!-- список - конец -->
+			<!-- checkbox -->
+			<div class="col-sm-10 offset-sm-2">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" name="checkbox-1">
+					<label class="form-check-label" for="gridCheck1">
+						Чек-бокс 1
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" name="checkbox-2">
+					<label class="form-check-label" for="gridCheck2">
+						Чек-бокс 2
+					</label>
+				</div>
+			</div> <!-- checkbox - end -->
+			<div class="offset-sm-2 mt-3"> <!-- radio -->
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="gridRadios-1" id="gridRadios1" value="1" checked>
+					<label class="form-check-label" for="gridRadios1">
+						Радио-1
+					</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="gridRadios-2" id="gridRadios2" value="2">
+					<label class="form-check-label" for="gridRadios2">
+						Радио-2
+					</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="gridRadios-3" id="gridRadios3" value="2">
+					<label class="form-check-label" for="gridRadios3">
+						Радио-3
+					</label>
+				</div>
+			</div> <!-- radio - end -->
+			<div class="row mt-3"> <!-- login -->
+				<label for="inputLogin" class="col-sm-2 col-form-label">Логин:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputLogin" name="login" placeholder="Введите имя">
+				</div>
+			</div> <!-- login - end -->
+			<div class="row mt-3"> <!-- password -->
+				<label for="inputPassword" class="col-sm-2 col-form-label">Пароль:</label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" id="inputPassword" name="password" placeholder="Введите пароль">
+				</div>
+			</div> <!-- password - end -->
+			<button type="submit" class="btn btn-primary mt-3 mb-2">Отправить</button>
+		</form>
+	</main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projects.Pages.Artist_Songs"
+             Title="Artist_Songs"
+             Loaded="OnPageLoad">
+
+    <Grid RowDefinitions="*, *,2.5*"
+          Padding="40">
+        <Label HorizontalOptions="Center"
+               Text="Select artist"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               Padding="60"/>
+        <Picker x:Name="Picker"
+                HorizontalOptions="Center"
+                SelectedIndexChanged="OnPickerSelectedIndexChanged"
+                Grid.Row="1"
+                />
+
+        <ListView x:Name="ServicesView" 
+                  HorizontalOptions="Center"
+                  HasUnevenRows="True"
+                  VerticalScrollBarVisibility="Never"
+                  Grid.Row="2"
+                  RowHeight="30"
+                  Margin="5"
+                  />
+    </Grid>
+
+</ContentPage>

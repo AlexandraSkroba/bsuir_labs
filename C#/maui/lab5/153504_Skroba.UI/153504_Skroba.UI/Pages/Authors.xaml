@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_153504_Skroba.UI.Pages.Authors"
+             xmlns:local="clr-namespace:_153504_Skroba.UI"
+             xmlns:pages="clr-namespace:_153504_Skroba.UI.Pages"
+             xmlns:models="clr-namespace:_153504_Skroba.UI.ViewModels"
+             xmlns:ent="clr-namespace:_153504_Skroba.Domain.Entities;assembly=153504_Skroba.Domain"
+             xmlns:conv="clr-namespace:_153504_Skroba.UI.ValueConverters"
+             x:DataType="models:AuthorsViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BindingContext = "AuthorsViewModel"
+             Title="Authors">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:RatingToColorValueConverter x:Key="RatingToColor"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior 
+            EventName="Loaded"
+            Command="{Binding UpdateGroupListCommand }"/>
+    </ContentPage.Behaviors>
+
+    <Grid RowDefinitions="*, *, 8*, *">
+
+        <Label Text="Select Author" 
+               HorizontalOptions="Center"
+               FontSize="20"
+               FontAttributes="Bold"
+               Padding="0, 20, 0, 0"/>
+
+        <Picker WidthRequest="300"
+                HorizontalTextAlignment="Center"
+                Margin="0, 10, 0, 0"
+                x:Name = "authorPicker" 
+                FontAttributes="Bold"
+                ItemsSource="{Binding Authors}"
+                ItemDisplayBinding="{Binding Name}" 
+                SelectedItem="{Binding SelectedAuthor}"
+                Grid.Row="1">
+            <Picker.Behaviors>
+                <toolkit:EventToCommandBehavior 
+                    EventName="SelectedIndexChanged"
+                    Command="{Binding UpdateMembersListCommand}"/>
+            </Picker.Behaviors>
+        </Picker>
+
+        <HorizontalStackLayout Grid.Row="3" HorizontalOptions="Center" Margin="0, 0, 0, 45">
+            <Button Text="Add author" WidthRequest="150" HeightRequest="50" Command="{Binding AddAuthorCommand}"/>
+            <Button Text="Add book" WidthRequest="150" HeightRequest="50" Command="{Binding AddBookCommand}"/>
+        </HorizontalStackLayout>
+
+        <ScrollView HeightRequest="380" Grid.Row="2" Margin="0, 0, 0, 20" VerticalOptions="Center">
+            <CollectionView x:Name="booksView" ItemsSource="{Binding Books}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="ent:Book">
+                        <Frame Margin="0,1" WidthRequest="400" BackgroundColor="{Binding Rating, Converter={StaticResource RatingToColor} }">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source = {RelativeSource AncestorType = {x:Type models:AuthorsViewModel} },
+                                    Path = ShowDetailsCommand}" CommandParameter="{Binding}"/>
+                            </Frame.GestureRecognizers>
+
+                            <HorizontalStackLayout>
+                                <toolkit:AvatarView ImageSource="{Binding ImagePath}"></toolkit:AvatarView>
+                                <Label Text= "{Binding Name}" HorizontalOptions="Center" VerticalOptions="Center" Padding="16, 0, 0, 0"/>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+
+    </Grid>
+</ContentPage>

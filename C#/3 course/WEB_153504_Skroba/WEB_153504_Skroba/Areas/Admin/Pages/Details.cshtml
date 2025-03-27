@@ -1,0 +1,43 @@
+﻿@page
+@model WEB_153504_Skroba.Areas.Admin.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Tea</h4>
+    <hr />
+     <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Название</th>
+                <td>@Model.Tea.Name</td>
+            </tr>
+            <tr>
+                <th scope="row">Описание</th>
+                <td>@Model.Tea.Description</td>
+            </tr>
+            <tr>
+                <th scope="row">Категория</th>
+                <td>@Model.Tea.CategoryId</td>
+            </tr>
+            <tr>
+                <th scope="row">Цена</th>
+                <td>@Model.Tea.Price</td>
+            </tr>
+            <tr>
+                <th scope="row">Изображение</th>
+                <td>
+                    <img src="@Model.Tea.ImagePath" style="width: 150px; height: auto;"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Tea?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

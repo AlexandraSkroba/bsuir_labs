@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153504_Skroba", "WEB_153504_Skroba\WEB_153504_Skroba.csproj", "{970E6087-7477-4C60-94AC-18824FDA7BD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153504_Skroba.Domain", "WEB_153504_Skroba.Domain\WEB_153504_Skroba.Domain.csproj", "{BEE7C5FE-4D8F-4F76-A0CD-810FA9FC52A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153504_Skroba.API", "WEB_153504_Skroba.API\WEB_153504_Skroba.API.csproj", "{AC02FE74-816E-4A16-A950-C5C29A1ACD9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153504_Skroba.IdentityServer", "WEB_153504_Skroba.IdentityServer\WEB_153504_Skroba.IdentityServer.csproj", "{6B3F5DD4-B144-4AF4-8E19-8F847E06AB24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153504_Skroba.Tests", "WEB_153504_Skroba.Tests\WEB_153504_Skroba.Tests.csproj", "{88C12074-C8F8-40EC-B497-D18B4DB74BB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153504_Skroba.BlazorWasm", "WEB_153504_Skroba.BlazorWasm\WEB_153504_Skroba.BlazorWasm.csproj", "{72BF6441-4E39-4578-9C00-DF30A66341D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{970E6087-7477-4C60-94AC-18824FDA7BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970E6087-7477-4C60-94AC-18824FDA7BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970E6087-7477-4C60-94AC-18824FDA7BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970E6087-7477-4C60-94AC-18824FDA7BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE7C5FE-4D8F-4F76-A0CD-810FA9FC52A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE7C5FE-4D8F-4F76-A0CD-810FA9FC52A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE7C5FE-4D8F-4F76-A0CD-810FA9FC52A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE7C5FE-4D8F-4F76-A0CD-810FA9FC52A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC02FE74-816E-4A16-A950-C5C29A1ACD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC02FE74-816E-4A16-A950-C5C29A1ACD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC02FE74-816E-4A16-A950-C5C29A1ACD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC02FE74-816E-4A16-A950-C5C29A1ACD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B3F5DD4-B144-4AF4-8E19-8F847E06AB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3F5DD4-B144-4AF4-8E19-8F847E06AB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3F5DD4-B144-4AF4-8E19-8F847E06AB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3F5DD4-B144-4AF4-8E19-8F847E06AB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88C12074-C8F8-40EC-B497-D18B4DB74BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C12074-C8F8-40EC-B497-D18B4DB74BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C12074-C8F8-40EC-B497-D18B4DB74BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C12074-C8F8-40EC-B497-D18B4DB74BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72BF6441-4E39-4578-9C00-DF30A66341D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72BF6441-4E39-4578-9C00-DF30A66341D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72BF6441-4E39-4578-9C00-DF30A66341D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72BF6441-4E39-4578-9C00-DF30A66341D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {762A4E7A-6A00-4CD1-8B69-42391C2BDF79}
+	EndGlobalSection
+EndGlobal

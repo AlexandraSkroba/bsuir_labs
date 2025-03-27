@@ -1,0 +1,12 @@
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\bin\Debug\net7.0\WEB_153504_Skroba.Domain.deps.json
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\bin\Debug\net7.0\WEB_153504_Skroba.Domain.dll
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\bin\Debug\net7.0\WEB_153504_Skroba.Domain.pdb
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\WEB_153504_Skroba.Domain.csproj.AssemblyReference.cache
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\WEB_153504_Skroba.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\WEB_153504_Skroba.Domain.AssemblyInfoInputs.cache
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\WEB_153504_Skroba.Domain.AssemblyInfo.cs
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\WEB_153504_Skroba.Domain.csproj.CoreCompileInputs.cache
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\WEB_153504_Skroba.Domain.dll
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\refint\WEB_153504_Skroba.Domain.dll
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\WEB_153504_Skroba.Domain.pdb
+D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.Domain\obj\Debug\net7.0\ref\WEB_153504_Skroba.Domain.dll

@@ -1,0 +1,38 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8000
+
+                    ; 8200..821f
+                    ; 8220..823f
+
+  8000 CE 82 00     ldx #$8200
+  8003 18 CE 82 20  ldy #$8220
+
+                   LOOP:
+  8007 A6 00        ldaa $0,x
+  8009 18 E6 00     ldab $0,y
+
+  800C 84 0F        anda #%00001111
+  800E C4 F0        andb #%11110000
+  8010 1B           aba
+
+  8011 E6 00        ldab $0,x
+  8013 A7 00        staa $0,x
+  8015 18 A6 00     ldaa $0,y
+
+  8018 84 0F        anda #%00001111
+  801A C4 F0        andb #%11110000
+  801C 1B           aba
+
+  801D 18 A7 00     staa $0,y
+
+                   CONTINUE:
+  8020 08           inx
+  8021 18 08        iny
+  8023 8C 82 20     cpx #$8220 ;x-8220
+  8026 26 DF        bne LOOP
+
+  Symbol Table 
+
+  CONTINUE           8020
+  LOOP               8007

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>457</width>
+    <height>199</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #9BD492;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="bitset">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;
+text-align: center;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>60</y>
+      <width>441</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QSpinBox" name="spinBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 13pt &quot;Small Fonts&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="set">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>set</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="reset">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>reset</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="flip">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>flip</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="test">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>test</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="all">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>all</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="any">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>any</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="count">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>count</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="flip_all">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>flip all</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="none">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>none</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="reset_all">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>reset all</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="set_all">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>set all</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="size">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>size</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="to_ullong">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>to_ullong</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="to_ulong">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(246, 242, 170);
+font: 13pt &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>to_ulong</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>457</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

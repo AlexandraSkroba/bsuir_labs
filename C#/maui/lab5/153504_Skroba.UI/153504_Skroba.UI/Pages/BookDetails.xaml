@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_153504_Skroba.UI.Pages.BookDetails"
+             xmlns:models="clr-namespace:_153504_Skroba.UI.ViewModels"
+             x:DataType="models:BookDetailsViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BindingContext = "BookDetailsViewModel"
+             xmlns:ent="clr-namespace:_153504_Skroba.Domain.Entities;assembly=153504_Skroba.Domain"
+             Loaded="OnLoadPage"
+             Title="BookDetails">
+    <VerticalStackLayout>
+        <Image x:Name="photo" HorizontalOptions="Center" WidthRequest="200" Margin="0, 40, 0, 10"/>
+        <Label x:Name="yearLabe" HorizontalOptions="Center" Margin="0, 0, 0, 5"/>
+        <Label x:Name="nameLabel" HorizontalOptions="Center" Margin="0, 0, 0, 5"/>
+        <Label x:Name="ratingLabel" HorizontalOptions="Center" Margin="0, 0, 0, 5"/>
+
+        <HorizontalStackLayout Grid.Row="3" HorizontalOptions="Center" Margin="0, 45, 0, 0">
+            <Button Text="Edit" WidthRequest="150" HeightRequest="50" Command="{Binding EditBookCommand}"/>
+            <Button Text="Add photo" WidthRequest="150" HeightRequest="50" Command="{Binding ChangePhotoCommand}"/>
+        </HorizontalStackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>

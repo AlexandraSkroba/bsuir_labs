@@ -1,0 +1,12 @@
+2023-12-08 02:28:49.327 +03:00 [INF] ---> request /identity/Login returns 302
+2023-12-08 02:28:59.718 +03:00 [INF] ---> request /signin-oidc returns 302
+2023-12-08 02:29:05.011 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2023-12-08 02:30:11.748 +03:00 [INF] ---> request /favicon.ico returns 0
+2023-12-08 02:30:14.808 +03:00 [INF] ---> request /favicon.ico returns 0
+2023-12-08 02:30:16.462 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2023-12-08 02:35:48.107 +03:00 [INF] ---> request /favicon.ico returns 0
+2023-12-08 02:35:52.623 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2023-12-08 02:37:35.485 +03:00 [INF] ---> request /favicon.ico returns 0
+2023-12-08 02:37:38.235 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2023-12-08 02:41:42.503 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2023-12-08 02:41:48.449 +03:00 [INF] ---> request /Cart/add/2 returns 302

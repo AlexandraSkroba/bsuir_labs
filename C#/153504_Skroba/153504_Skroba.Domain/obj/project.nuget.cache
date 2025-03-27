@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "+oPTIP4HfW0+kxQ3TVRwkCQJlfKrFindhgylh7edI1WNrVbtcQ+Z9fSL6t5q+tnTfS6bQMSKt3Q8dxIkg8Ykdg==",
+  "success": true,
+  "projectFilePath": "D:\\С#\\153504_Skroba\\153504_Skroba.Domain\\153504_Skroba.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Александра\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\Александра\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\Александра\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\Александра\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\Александра\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\Александра\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

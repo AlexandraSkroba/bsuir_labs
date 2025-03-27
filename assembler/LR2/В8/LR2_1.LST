@@ -1,0 +1,9 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    ;      $8100-8102
+                    org $8000
+  8000 86 0C        ldaa #12
+  8002 B7 81 00     staa $8100
+  8005 C6 15        ldab #21
+  8007 F7 81 01     stab $8101
+  800A 3D           mul

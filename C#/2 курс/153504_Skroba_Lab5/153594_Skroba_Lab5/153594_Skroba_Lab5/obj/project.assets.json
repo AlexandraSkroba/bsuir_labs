@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "153504_Skroba_Lab5.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/153504_Skroba_Lab5.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/153504_Skroba_Lab5.Domain.dll": {}
+        }
+      },
+      "Serializer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "153504_Skroba_Lab5.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Serializer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Serializer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "153504_Skroba_Lab5.Domain/1.0.0": {
+      "type": "project",
+      "path": "../153504_Skroba_Lab5.Domain/153504_Skroba_Lab5.Domain.csproj",
+      "msbuildProject": "../153504_Skroba_Lab5.Domain/153504_Skroba_Lab5.Domain.csproj"
+    },
+    "Serializer/1.0.0": {
+      "type": "project",
+      "path": "../Serializer/Serializer.csproj",
+      "msbuildProject": "../Serializer/Serializer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "153504_Skroba_Lab5.Domain >= 1.0.0",
+      "Serializer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Александра\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\С#\\2 курс\\153504_Skroba_Lab5\\153594_Skroba_Lab5\\153594_Skroba_Lab5\\153594_Skroba_Lab5.csproj",
+      "projectName": "153594_Skroba_Lab5",
+      "projectPath": "D:\\С#\\2 курс\\153504_Skroba_Lab5\\153594_Skroba_Lab5\\153594_Skroba_Lab5\\153594_Skroba_Lab5.csproj",
+      "packagesPath": "C:\\Users\\Александра\\.nuget\\packages\\",
+      "outputPath": "D:\\С#\\2 курс\\153504_Skroba_Lab5\\153594_Skroba_Lab5\\153594_Skroba_Lab5\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Александра\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\С#\\2 курс\\153504_Skroba_Lab5\\153594_Skroba_Lab5\\153504_Skroba_Lab5.Domain\\153504_Skroba_Lab5.Domain.csproj": {
+              "projectPath": "D:\\С#\\2 курс\\153504_Skroba_Lab5\\153594_Skroba_Lab5\\153504_Skroba_Lab5.Domain\\153504_Skroba_Lab5.Domain.csproj"
+            },
+            "D:\\С#\\2 курс\\153504_Skroba_Lab5\\153594_Skroba_Lab5\\Serializer\\Serializer.csproj": {
+              "projectPath": "D:\\С#\\2 курс\\153504_Skroba_Lab5\\153594_Skroba_Lab5\\Serializer\\Serializer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

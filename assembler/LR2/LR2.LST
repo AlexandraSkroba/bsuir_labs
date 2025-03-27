@@ -1,0 +1,36 @@
+  ADDR B1 B2 B3 B4 D:\assembler\LR1\LR2.asm                         PAGE       1
+
+                   ;
+                   ;  $8000  $8004
+                   ;  7
+                   ; 1
+                   ;   .
+
+                    org $8000
+
+  8000 4F           clra
+  8001 F6 80 00     ldab $8000
+
+  8004 8F           xgdx
+
+  8005 18 CE 80 01  ldy #$8001
+  8009 86 04        ldaa #4
+
+                   LOOP:
+  800B 18 E6 00     ldab $0,y
+  800E 3A           abx
+  800F 18 08        iny
+  8011 4A           deca
+  8012 26 F7        bne LOOP
+
+  8014 35           txs
+  8015 3C           pshx
+  8016 3C           pshx
+  8017 3C           pshx
+
+
+
+
+  Symbol Table 
+
+  LOOP               800B

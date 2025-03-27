@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>10</y>
+      <width>483</width>
+      <height>559</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="2" column="0">
+      <widget class="QSpinBox" name="mapKey">
+       <property name="suffix">
+        <string/>
+       </property>
+       <property name="prefix">
+        <string>key </string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="mapInsert">
+       <property name="text">
+        <string>map[key] = value</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QPushButton" name="mapErase">
+       <property name="text">
+        <string>erase</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="mapValue">
+       <property name="prefix">
+        <string>value </string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="mapPrintAll">
+       <property name="text">
+        <string>print all</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="2">
+      <widget class="QPushButton" name="mapCount">
+       <property name="text">
+        <string>count</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QSpinBox" name="mapAtKey"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="mapClear">
+       <property name="text">
+        <string>clear</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" colspan="2">
+      <widget class="QPushButton" name="mapAt">
+       <property name="text">
+        <string>operator[]</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QSpinBox" name="mapEraseKey"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QSpinBox" name="mapCountKey"/>
+     </item>
+     <item row="6" column="2">
+      <widget class="QPushButton" name="mapSize">
+       <property name="text">
+        <string>size</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QTextBrowser" name="mapDisplay"/>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="mapLabel">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>map</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>451</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QSpinBox" name="setInsertValue"/>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="setSize">
+       <property name="text">
+        <string>size</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="setClear">
+       <property name="text">
+        <string>clear</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QTextBrowser" name="setDisplay"/>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QPushButton" name="setInsert">
+       <property name="text">
+        <string>insert</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="2">
+      <widget class="QPushButton" name="setCount">
+       <property name="text">
+        <string>count</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="setPrint">
+       <property name="text">
+        <string>print all</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QPushButton" name="setErase">
+       <property name="text">
+        <string>erase</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QSpinBox" name="setCountValue"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QSpinBox" name="setEraseValue"/>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="setLabel">
+       <property name="text">
+        <string>set</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

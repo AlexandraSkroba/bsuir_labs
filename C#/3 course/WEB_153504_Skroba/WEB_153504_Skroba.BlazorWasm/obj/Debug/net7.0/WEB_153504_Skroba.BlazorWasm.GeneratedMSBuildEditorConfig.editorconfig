@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = WEB_153504_Skroba.BlazorWasm
+build_property.RootNamespace = WEB_153504_Skroba.BlazorWasm
+build_property.ProjectDir = D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.BlazorWasm\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\С#\3 course\WEB_153504_Skroba\WEB_153504_Skroba.BlazorWasm
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Pages/CategorySelector.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlTZWxlY3Rvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Pages/Pager.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Pages/ProductDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Pages/ProductsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-gqo58d16sn
+
+[D:/С\#/3 course/WEB_153504_Skroba/WEB_153504_Skroba.BlazorWasm/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5ylmtutmfd

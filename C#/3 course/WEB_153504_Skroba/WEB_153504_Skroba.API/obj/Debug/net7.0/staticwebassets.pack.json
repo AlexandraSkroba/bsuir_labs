@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\5evqqkie.jpg",
+      "PackagePath": "staticwebassets\\images\\5evqqkie.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\blackTea1.jpg",
+      "PackagePath": "staticwebassets\\images\\blackTea1.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\cwz00nng.jpg",
+      "PackagePath": "staticwebassets\\images\\cwz00nng.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\default-profile-picture.png",
+      "PackagePath": "staticwebassets\\images\\default-profile-picture.png"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\fam5puot.jpg",
+      "PackagePath": "staticwebassets\\images\\fam5puot.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\gl3qtnte.jpg",
+      "PackagePath": "staticwebassets\\images\\gl3qtnte.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\greenTea2.jpg",
+      "PackagePath": "staticwebassets\\images\\greenTea2.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\inqujra1.jpg",
+      "PackagePath": "staticwebassets\\images\\inqujra1.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\lksp4mqx.jpg",
+      "PackagePath": "staticwebassets\\images\\lksp4mqx.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\psflnf2z.jpg",
+      "PackagePath": "staticwebassets\\images\\psflnf2z.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\qkrw0dae.jpg",
+      "PackagePath": "staticwebassets\\images\\qkrw0dae.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\wrhf0pm2.jpg",
+      "PackagePath": "staticwebassets\\images\\wrhf0pm2.jpg"
+    },
+    {
+      "Id": "D:\\С#\\3 course\\WEB_153504_Skroba\\WEB_153504_Skroba.API\\wwwroot\\images\\xmfhafoi.jpg",
+      "PackagePath": "staticwebassets\\images\\xmfhafoi.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WEB_153504_Skroba.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WEB_153504_Skroba.API.props",
+      "PackagePath": "build\\WEB_153504_Skroba.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WEB_153504_Skroba.API.props",
+      "PackagePath": "buildMultiTargeting\\WEB_153504_Skroba.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WEB_153504_Skroba.API.props",
+      "PackagePath": "buildTransitive\\WEB_153504_Skroba.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

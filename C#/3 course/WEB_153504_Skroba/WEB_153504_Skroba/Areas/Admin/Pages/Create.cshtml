@@ -1,0 +1,53 @@
+﻿@page
+@model WEB_153504_Skroba.Areas.Admin.Pages.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Tea</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tea.Name" class="control-label"></label>
+                <input asp-for="Tea.Name" class="form-control" />
+                <span asp-validation-for="Tea.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tea.CategoryId" class="control-label"></label>
+                <select asp-for="Tea.CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tea.Description" class="control-label"></label>
+                <input asp-for="Tea.Description" class="form-control" />
+                <span asp-validation-for="Tea.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tea.Price" class="control-label"></label>
+                <input asp-for="Tea.Price" class="form-control" />
+                <span asp-validation-for="Tea.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Image">Image</label>
+                <div class="input-group" asp-for="Image">
+                    <input type="file" class="form-control" asp-for="Image" accept="image/*">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a
+       asp-page="Index">
+        Вернуться к списку
+    </a>
+</div>

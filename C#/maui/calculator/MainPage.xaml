@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculator.MainPage">
+
+    <Grid BackgroundColor="#F0EFEF" ColumnSpacing="4" RowSpacing="0" Padding="5, 0, 5, 0" >
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label
+            x:Name="result"
+            BackgroundColor="#FAFAFA"
+            Text="0"
+            TextColor="#000"
+            Grid.ColumnSpan="4"
+            Grid.Row="0"
+            VerticalTextAlignment="Center"
+            LineBreakMode="NoWrap"
+            HorizontalTextAlignment="End"
+            FontSize="48"
+            FontAttributes="Bold"
+            />
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="4">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- % -->
+            <Button
+                Text="%"
+                FontSize="15"
+                FontAttributes="Bold"
+                BackgroundColor="#111"
+                TextColor="#FAFAFA"
+                Clicked="OnClickOperator"
+            />
+
+            <!-- +/- -->
+            <Button
+                Grid.Column="1"
+                Text="+/-"
+                FontSize="15"
+                FontAttributes="Bold"
+                BackgroundColor="#111"
+                TextColor="#FAFAFA"
+                Clicked="OnClickOperator"
+                />
+
+            <Button
+                Grid.Column="2"
+                Text="e^x"
+                FontSize="15"
+                FontAttributes="Bold"
+                BackgroundColor="#111"
+                TextColor="#FAFAFA"
+                Clicked="OnClickOperator"
+                />
+
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="5" BackgroundColor="#FAFAFA">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!-- MC -->
+            <Button
+             BackgroundColor="#FAFAFA"
+            Text="MC"
+            TextColor="#353535"
+            FontSize="15"
+            HeightRequest="50"
+            FontAttributes="Bold"
+            Clicked="OnClickOperator"
+            />
+
+            <!-- MR -->
+            <Button 
+                BackgroundColor="#FAFAFA"
+            Grid.Column="1"
+            Text="MR"
+            TextColor="#353535"
+            FontSize="15"
+            HeightRequest="50"
+            FontAttributes="Bold"
+            Clicked="OnClickOperator"
+            />
+
+            <!-- M+ -->
+            <Button 
+                BackgroundColor="#FAFAFA"
+            Grid.Row="1"
+            Grid.Column="2"
+            Text="M+"
+            TextColor="#353535"
+            FontSize="15"
+            FontAttributes="Bold"
+            HeightRequest="50"
+            Clicked="OnClickOperator"
+            />
+
+            <!-- M+ -->
+            <Button 
+                BackgroundColor="#FAFAFA"
+            Grid.Row="1"
+            Grid.Column="5"
+            Text="MS"
+            TextColor="#353535"
+            FontSize="15"
+            FontAttributes="Bold"
+            HeightRequest="50"
+            Clicked="OnClickOperator"
+            />
+
+            <!-- M- -->
+            <Button 
+                BackgroundColor="#FAFAFA"
+            Grid.Row="1"
+            Grid.Column="3"
+            HeightRequest="50"
+            Text="M-"
+            TextColor="#353535"
+            FontSize="15"
+            FontAttributes="Bold"
+            Clicked="OnClickOperator"
+            />
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="4">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- CE -->
+            <Button 
+            Grid.Row="2"
+            Text="CE"
+            FontSize="15"
+            FontAttributes="Bold"
+            BackgroundColor="#111"
+            TextColor="#FAFAFA"
+            Clicked="ClearClick"
+            />
+
+            <!-- С -->
+            <Button 
+            Grid.Row="2"
+            Grid.Column="1"
+            Text="C"
+            FontSize="15"
+            FontAttributes="Bold"
+            BackgroundColor="#111"
+            TextColor="#FAFAFA"
+            Clicked="ClearClick"
+            />
+
+            <!-- ← -->
+            <Button 
+            Grid.Row="2"
+            Grid.Column="3"
+            Text="⌫"
+            FontSize="20"
+            FontAttributes="Bold"
+            BackgroundColor="#3C6E71"
+            TextColor="#FAFAFA"
+            Clicked="ClearClick"
+            />
+        </Grid>
+
+        <!-- 1/x -->
+        <Button 
+            Grid.Row="4"
+            BackgroundColor="#161616"
+            Text="1/x"
+            TextColor="#FAFAFA"
+            FontAttributes="Bold"
+            FontSize="15"
+            Clicked="OnClickOperator"
+            />
+
+        <!-- x^2 -->
+        <Button 
+            Grid.Row="4"
+            Grid.Column="1"
+            BackgroundColor="#161616"
+            Text="x^2"
+            TextColor="#FAFAFA"
+            FontAttributes="Bold"
+            FontSize="15"
+            Clicked="OnClickOperator"
+            />
+
+        <!-- √ -->
+        <Button 
+            Grid.Row="4"
+            Grid.Column="2"
+            BackgroundColor="#161616"
+            Text="√"
+            TextColor="#FAFAFA"
+            FontAttributes="Bold"
+            FontSize="15"
+            Clicked="OnClickOperator"
+            />
+
+        <!-- × -->
+        <Button 
+            Grid.Row="5"
+            Grid.Column="3"
+            Text="×"
+            BackgroundColor="#3C6E71"
+            TextColor="#FAFAFA"
+            FontAttributes="Bold"
+            FontSize="25"
+            Clicked="OnClickMathOperator"
+            />
+
+        <!-- / -->
+        <Button 
+            Grid.Row="4"
+            Grid.Column="3"
+            BackgroundColor="#3C6E71"
+            Text="/"
+            TextColor="#FAFAFA"
+            FontAttributes="Bold"
+            FontSize="25"
+            Clicked="OnClickMathOperator"
+            />
+
+        <!-- + -->
+        <Button 
+            Grid.Row="7"
+            Grid.Column="3"
+            Text="+"
+            BackgroundColor="#3C6E71"
+            TextColor="#FAFAFA"
+            FontAttributes="Bold"
+            FontSize="25"
+            Clicked="OnClickMathOperator"
+            />
+
+        <!-- - -->
+        <Button 
+            Grid.Row="6"
+            Grid.Column="3"
+            Text="−"
+            BackgroundColor="#3C6E71"
+            TextColor="#FAFAFA"
+            FontAttributes="Bold"
+            FontSize="25"
+            Clicked="OnClickMathOperator"
+            />
+
+        <!-- = -->
+        <Button 
+            Grid.Row="8"
+            Grid.Column="3"
+            Text="="
+            BackgroundColor="#3C6E71"
+            TextColor="#FAFAFA"
+            FontAttributes="Bold"
+            FontSize="25"
+            Clicked="OnClickCalculate"
+            />
+        
+        <!-- 7 -->
+        <Button 
+            Grid.Row="5"
+            BackgroundColor="#FAFAFA"
+            Text="7"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            Clicked="OnClick"
+            />
+
+        <!-- 8 -->
+        <Button 
+            Grid.Row="5"
+            Grid.Column="1"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Text="8"
+            Clicked="OnClick"
+            />
+
+        <!-- 9 -->
+        <Button 
+            Grid.Row="5"
+            Grid.Column="2"
+            Text="9"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="OnClick"
+            />
+
+        <!-- 4 -->
+        <Button 
+            Grid.Row="6"
+            Text="4"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="OnClick"
+            />
+
+        <!-- 5 -->
+        <Button 
+            Grid.Row="6"
+            Grid.Column="1"
+            Text="5"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="OnClick"
+            />
+
+        <!-- 6 -->
+        <Button 
+            Grid.Row="6"
+            Grid.Column="2"
+            Text="6"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="OnClick"
+            />
+
+        <!-- 1 -->
+        <Button 
+            Grid.Row="7"
+            Text="1"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="OnClick"
+            />
+
+        <!-- 2 -->
+        <Button 
+            Grid.Row="7"
+            Grid.Column="1"
+            Text="2"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="OnClick"
+            />
+
+        <!-- 3 -->
+        <Button 
+            Grid.Row="7"
+            Grid.Column="2"
+            Text="3"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="OnClick"
+            />
+
+        <!-- 0 -->
+        <Button 
+            Grid.Row="8"
+            Grid.ColumnSpan="2"
+            Text="0"
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="OnClick"
+            />
+
+        <!-- . -->
+        <Button 
+            Grid.Row="8"
+            Grid.Column="2"
+            Text="."
+            TextColor="#353535"
+            FontAttributes="Bold"
+            FontSize="20"
+            BackgroundColor="#FAFAFA"
+            Clicked="DotClick"
+            />
+
+    </Grid>
+    
+</ContentPage>

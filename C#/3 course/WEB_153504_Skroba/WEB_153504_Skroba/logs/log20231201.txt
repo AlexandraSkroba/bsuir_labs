@@ -1,0 +1,2 @@
+2023-12-01 09:53:22.418 +03:00 [INF] ---> request /js/site.js returns 304
+2023-12-01 09:53:23.975 +03:00 [INF] ---> request /Cart/add/1 returns 302

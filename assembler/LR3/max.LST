@@ -1,0 +1,13 @@
+  ADDR B1 B2 B3 B4 D:\assembler\LR3\max.asm                         PAGE       1
+
+                   ;       X  Y.
+                    org $8000
+
+  8000 3C           pshx
+  8001 32           pula
+  8002 33           pulb
+
+  8003 18 FF 01 00  sty $0100
+
+  8007 BA 01 00     oraa $0100
+  800A FA 01 01     orab $0101

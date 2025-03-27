@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="_153504_Skroba.UI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:_153504_Skroba.UI"
+    xmlns:pages="clr-namespace:_153504_Skroba.UI.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="Home">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Authors list">
+        <ShellContent
+        Title="Authors list"
+        ContentTemplate="{DataTemplate pages:Authors}"
+        Route="Authors"/>
+    </FlyoutItem>
+
+</Shell>

@@ -1,0 +1,23 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8000
+  8000 C6 02        ldab #$02 ;
+  8002 CE 80 13     ldx #ways ;    X
+  8005 1A EE 00    p0 ldy 0,x ;     Y
+  8008 18 6E 00     jmp 0,y ;    ,    Y
+  800B 01          p1 nop ;   2
+  800C 08           inx ;   X  2
+
+  800D 20 F6        bra p0 ;    p0
+  800F 20 FA       p2 bra p1 ;    p1
+  8011 21 FE       p3 brn * ;   3
+  8013 80 0B 80 0F ways fdb p1,p2,p3
+. 8017 80 11
+
+  Symbol Table 
+
+  P0                 8005
+  P1                 800B
+  P2                 800F
+  P3                 8011
+  WAYS               8013

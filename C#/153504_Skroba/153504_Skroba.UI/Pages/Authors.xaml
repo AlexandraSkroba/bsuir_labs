@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_153504_Skroba.UI.Pages.Authors"
+             xmlns:local="clr-namespace:_153504_Skroba.UI"
+             xmlns:pages="clr-namespace:_153504_Skroba.UI.Pages"
+             xmlns:models="clr-namespace:_153504_Skroba.UI.ViewModels"
+             xmlns:ent="clr-namespace:_153504_Skroba.Domain.Entities;assembly=153504_Skroba.Domain"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="models:AuthorsViewModel"
+             BindingContext = "AuthorsViewModel"
+             Title="Authors">
+    
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior 
+            EventName="Loaded"
+            Command="{Binding UpdateGroupListCommand }"/>
+    </ContentPage.Behaviors>
+
+    <Grid RowDefinitions="*, *,6*">
+        <Label Text="Select Author" 
+               HorizontalOptions="Center"
+               FontSize="20"
+               FontAttributes="Bold"
+               Padding="15"/>
+        
+        <Picker HorizontalOptions="Center" 
+                x:Name="GroupPicker" 
+                FontAttributes="Bold"
+                ItemDisplayBinding="{Binding Name}" 
+                ItemsSource="{Binding Authors}" 
+                SelectedItem="{Binding SelectedAuthor}"
+                Grid.Row="1">
+            <Picker.Behaviors>
+                <toolkit:EventToCommandBehavior 
+                    EventName="SelectedIndexChanged"
+                    Command="{Binding UpdateMembersListCommand}"/>
+            </Picker.Behaviors>
+        </Picker>
+
+        <CollectionView x:Name="BooksView" ItemsSource="{Binding Books}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="ent:Book">
+                    <Frame Margin="5,0">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source = {RelativeSource AncestorType = {x:Type models:AuthorsViewModel} },
+                                    Path = ShowDetailsCommand}" CommandParameter="{Binding}"/>
+                        </Frame.GestureRecognizers>
+
+                        <HorizontalStackLayout>
+                            <Label Text= "{Binding Name}"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+    
+</ContentPage>

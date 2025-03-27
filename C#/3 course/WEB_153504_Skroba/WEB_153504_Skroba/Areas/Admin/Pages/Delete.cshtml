@@ -1,0 +1,46 @@
+﻿@page
+@model WEB_153504_Skroba.Areas.Admin.Pages.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Tea</h4>
+    <hr />
+     <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Название</th>
+                <td>@Model.Tea.Name</td>
+            </tr>
+            <tr>
+                <th scope="row">Описание</th>
+                <td>@Model.Tea.Description</td>
+            </tr>
+            <tr>
+                <th scope="row">Категория</th>
+                <td>@Model.Tea.CategoryId</td>
+            </tr>
+            <tr>
+                <th scope="row">Цена</th>
+                <td>@Model.Tea.Price</td>
+            </tr>
+            <tr>
+                <th scope="row">Изображение</th>
+                <td>
+                    <img src="@Model.Tea.ImagePath" style="width: 150px; height: auto;"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Tea.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

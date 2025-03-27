@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_153504_Skroba.UI.Pages.EditBook"
+             xmlns:pages="clr-namespace:_153504_Skroba.UI.Pages"
+             xmlns:models="clr-namespace:_153504_Skroba.UI.ViewModels"
+             xmlns:ent="clr-namespace:_153504_Skroba.Domain.Entities;assembly=153504_Skroba.Domain"
+             x:DataType="models:BookEditViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BindingContext = "BookEditViewModel"
+             Loaded="OnLoadedPage"
+             Title="EditBook">
+    <VerticalStackLayout HorizontalOptions="Center" Margin="0, 30, 0, 0">
+        <HorizontalStackLayout Margin="20">
+            <Label Text="Title: "/>
+            <Entry x:Name="nameEntry" Margin="10, 0, 0, 0" WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Margin="20, 0, 20, 20">
+            <Label Text="Rating: "/>
+            <Entry x:Name="ratingEntry" Margin="10, 0, 0, 0" WidthRequest="138"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Margin="20, 0, 20, 20">
+            <Label Text="Year: "/>
+            <Entry x:Name="yearEntry" Margin="10, 0, 0, 0" WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Margin="20, 0, 20, 20">
+            <Label Text="Enter author: "/>
+            <Entry x:Name="authorEntry" Margin="10, 0, 0, 0" MinimumWidthRequest="97" MaximumWidthRequest="200"/>
+            <Label x:Name="alertLabel" FontAttributes="Bold" TextDecorations="Underline" TextColor="Gray" Padding="14, 0, 0, 0" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+        <Button Text="Update" Clicked="OnUpdateClicked" HeightRequest="30" Margin="0, 10" WidthRequest="200"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,9 @@
+2023-12-03 18:05:20.829 +03:00 [INF] ---> request /js/site.js returns 304
+2023-12-03 18:05:24.732 +03:00 [INF] ---> request /Cart/add/5 returns 302
+2023-12-03 18:05:31.730 +03:00 [INF] ---> request /identity/Logout returns 302
+2023-12-03 18:05:38.013 +03:00 [INF] ---> request /identity/Logout returns 302
+2023-12-03 18:06:00.667 +03:00 [INF] ---> request /Admin returns 302
+2023-12-03 18:06:02.923 +03:00 [INF] ---> request /signin-oidc returns 302
+2023-12-03 18:06:23.022 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2023-12-03 18:06:27.861 +03:00 [INF] ---> request /cart/RemoveItem/5 returns 302
+2023-12-03 18:06:39.509 +03:00 [INF] ---> request /Cart/add/8 returns 302
